@@ -67,6 +67,15 @@
         width: 90%;
     }
 
+    .footer-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 10px 20px;
+    }
+
+    footer {
+        padding: 15px 0;
+    }
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -182,6 +191,7 @@ ul li:hover ul.dropdown {
 h1 {
     margin-top: 150px;
     margin-left: 95px;
+    margin-bottom: -40px;
     font-size: 48px;
     font-family: "Lato-Black", Helvetica;
     font-weight: 900;
@@ -189,12 +199,12 @@ h1 {
 }
 
 .createClassroom {
-    position: fixed;
+    position: relative;
     border: none;
     background: transparent;
     cursor: pointer;
     left: 1587px;
-    top: 150px;
+    top: -12px;
 }
 
 .classroomContainer {
@@ -247,13 +257,14 @@ h1 {
 .red-BG-Board {
     width: calc(100% - 40px); /* Adjust the width to fit within the container */
     max-width: 310px;
-    margin: 50px auto; /* Center the items */
+    margin: 3px auto; /* Center the items */
     background-color: #ffffff;
     border-radius: 10px; /* Less rounded corners for a cleaner look */
     box-shadow: 0px 4px 4px #00000040;
     overflow: hidden;
     box-sizing: border-box;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 .pinkwall {
@@ -411,5 +422,50 @@ form h2 {
     height: auto; /* Maintain aspect ratio */
 }
 
+footer {
+    background-color: #5ea8ed;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    margin-top: -7px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+.footer-content p {
+    margin: 0;
+    font-family: "Poppins-Regular", Helvetica;
+}
+
+ul.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+ul.social-icons li {
+    margin: 0 10px;
+}
+
+ul.social-icons li a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+ul.social-icons li a:hover {
+    color: #43425E;
+}
 
 

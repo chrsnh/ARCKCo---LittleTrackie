@@ -85,9 +85,18 @@ function displayClassrooms() {
             const classroomElement = document.createElement('div');
             classroomElement.className = 'red-BG-Board';
 
+            let wallpaperSrc = '';
+            if (data.preSchool === 'Nursery 1'){
+                wallpaperSrc = 'asset/greenwallpaper.png';
+            } else if (data.preSchool === 'Nursery 2') {
+                wallpaperSrc = 'asset/bluewallpaper.png';
+            } else if (data.preSchool === 'Kinder') {
+                wallpaperSrc = 'asset/pinkwallpaper.png';
+            }
 
+            // Set the inner HTML
             classroomElement.innerHTML = `
-                <img class="pinkwall" src="asset/pinkwallpaper.png">
+                <img class="pinkwall" src="${wallpaperSrc}">
                 <p class="class-textTop"><strong>Level:</strong> ${data.preSchool}</p>
                 <p class="class-text"><strong>Section:</strong> ${data.sectionName}</p>
                 <p class="class-textLast"><strong>Schedule:</strong> ${data.schedule}</p>
