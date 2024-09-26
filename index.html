@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Trackie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+  <div class="login">
+    <div class="div">
+
+<!--===============================================LEFT CONTAINER===============================================-->
+
+        <img class="company-logo" src="asset/arckco.png" />
+        <h1 class="company-name">ARCK co.</h1>
+        <h1 class="web-title">Ateneo Child Learning Center</h1>
+        <div id="signUpMessage" class="messageDiv" style="display: none;"></div>
+
+<!--==================== [ARCK-001]SIGN UP PAGE ====================-->
+        <div class="left-box" id="signup">
+          <form method="post" action="">
+            <!--FIRST NAME-->
+            <p class="input-placeholder-firstname">First Name</p>
+            <div class="input-firstname">
+              <div class="firstname-icon-BG"></div>
+              <img class="firstname-icon" src="asset/user.png" />
+              <input type="text" id="fName" required>
+            </div>
+            <!--LAST NAME-->
+            <p class="input-placeholder-lastname">Last Name</p>
+            <div class="input-lastname">
+              <div class="lastname-icon-BG"></div>
+              <img class="lastname-icon" src="asset/user.png" />
+              <input type="text" id="lName" required>
+            </div>
+            <!--EMAIL ADDRESS-->
+            <p class="input-placeholder-emailAddress">Email Address</p>
+            <div class="input-emailAddress">
+              <div class="emailAddress-icon-BG"></div>
+              <img class="emailAddress-icon" src="asset/email.png" />
+              <input type="text" id="rEmail" required>
+            </div>
+            <!--PASSWORD-->
+            <p class="input-placeholder-password">Password</p>
+            <div class="input-password">
+              <div class="password-icon-BG"></div>
+              <img class="password-icon" src="asset/password.png" />
+              <input type="text" id="rPassword" required>
+            </div>
+            <div class="btn-group-signup">
+              <button class="btn-signup" id="submitSignUp">Sign Up</button>
+            </div>
+          </form>
+        <p class="or">Or login with</p>
+        <img class="line1" src="asset/Line 1.png"/>
+        <img class="line2" src="asset/Line 2.png"/>
+        <div class="btn-group-signInWithGoogle">
+          <img class="google-icon" src="asset/google-icon.png">
+          <button class="btn-signInWithGoogle">Sign In With Google</button>
+        </div>
+        <div class="Links">
+          <span class="Already-have-account">Already Have Account?</span> 
+          <button class="signin" id="signInButton">Sign In</button>
+        </div>
+      </div>
+
+
+<!--==================== [ARCK-002]SIGN IN PAGE ====================-->
+          <div class="left-box" id="signIn">
+            <form method="post" action="">
+              <div id="signInMessage" class="messageDiv" style="display: none;"></div>
+              <!--EMAIL ADDRESS-->
+              <p class="input-placeholder-email">Email Address</p>
+              <div class="input-email">
+                <div class="email-icon-BG"></div>
+                <img class="email-icon" src="asset/email.png" />
+                <input type="email" id="email" required>
+              </div>
+              <!--PASSWORD-->
+              <p class="input-placeholder-pass">Password</p>
+              <div class="input-pass">
+                <div class="pass-icon-BG"></div>
+                <img class="pass-icon" src="asset/password.png" />
+                <input type="password" id="password" required>
+              </div>
+              <p class="recover"><a href="#">Forgot Password?</a></p>
+              <div class="btn-group-signin">
+                <button class="btn-signin" id="submitSignIn">Sign In</button>
+              </div>
+            </form>
+            <p class="signin-or">Or login with</p>
+            <img class="signin-line1" src="asset/Line 1.png"/>
+            <img class="signin-line2" src="asset/Line 2.png"/>
+        <div class="btn-group-signInWithGoogle-signin">
+          <img class="google-icon" src="asset/google-icon.png">
+          <button class="btn-signInWithGoogle-signin" id="google-login-btn">Sign In With Google</button>
+        </div>
+        <div class="Links">
+          <span class="dont-have-account">Don't have Account?</span> 
+          <button class="signup" id="signUpButton">Sign Up</button>
+        </div>
+          </div>
+        
+<!--==============================================RIGHT CONTAINER===============================================-->
+
+      <div class="right-box">
+        <img class="littletrackie-logo" src="asset/logo.png">
+        <div class="small-ellipse"></div>
+        <div class="medium-ellipse"></div>
+        <div class="big-ellipse"></div>
+        <img class="down1" src="asset/Rectangle 30.png">
+        <img class="down2" src="asset/Rectangle 31.png">
+        <img class="teacher-sit" src="asset/teacherSit.png">
+      </div>
+    </div>
+  </div>
+
+  <!--================================================ FOOTER =================================================-->
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 ARCK Co | All rights reserved.</p>
+      <ul class="social-icons">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+
+<!--===================================================SCRIPT===================================================-->
+  <script src="script.js"></script>
+</body>
+</html>

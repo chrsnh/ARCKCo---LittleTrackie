@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Little Trackie </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="homePage.css">
+</head>
+<body>
+    <nav>
+        <label class="logo"><img class="product-logo" src="asset/Product Logo.png"></label>
+        <ul><li><a class="active" href="homePage.html"><img class="home" src="asset/Home.png"></a></li>
+            <li>
+                <a class="active" href="#"><img class="home" src="asset/Profile.png"></a>
+                <ul class="dropdown">
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="index.html">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>Classroom</h1>
+
+    <button id="openForm" class="createClassroom"><img src="asset/Create Classroom.png"></button>
+
+    <!-- Overlay for Transparent effect -->
+    <div id="overlay"></div>
+
+    <!-- Classroom Form -->
+    <div class="classroomContainer" id="classroomForm">
+        <div>
+            <img class="formDesign3" src="asset/formdesign3.png">
+            <img class="formDesign1" src="asset/formdesign 1.png">
+            <img class="formDesign2" src="asset/formdesign2.png">
+
+        </div>
+        <button id="closeForm" class="btn-close"><img class="btn-close" src="asset/Multiply.png"></button>
+        <div class="add-classroom-container">
+            <form action="" id="classroomAddForm" class="createClassroomForm">
+                <div class="formHeader"></div>
+                <h2>Create Classroom</h2>
+                <div class="input-box">
+                    <h5>Level</h5>
+                    <select name="Pre-School" id="preSchool" class="input-box" required>
+                        <option value="Nursery 1">Nursery 1</option>
+                        <option value="Nursery 2">Nursery 2</option>
+                        <option value="Kinder">Kinder</option>
+                    </select>
+                </div><br>
+                <div class="input-box">
+                    <h5>Section</h5>
+                    <input type="text" id="sectionName" required>
+                </div><br>
+                <div class="input-box">
+                    <h5>Schedule</h5>
+                    <input type="text" id="schedule" required>
+                </div>
+                <button type="submit" class="join-btn">Create</button>
+            </form>
+        </div>
+    </div>
+    <div class="container" id="classroomList"></div>
+
+    <!--Footer Part-->
+    <div class="designRec3"><img src="asset/footer.png"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="homePage.js"></script>
+</body>
+</html>
